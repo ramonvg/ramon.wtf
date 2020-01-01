@@ -8,5 +8,5 @@ layout: home
 ## Hello friend,
 
 I'm Ramon Villalonga from Mallorca. I have been a Backend Developer for more than three years.
-Even as a Backend Developer I have always paid a lot of attention at the resulting product.
-I love building high quality products. I commited to build one in 2020. Let's see how things go!
+I love building high quality products. Even as a Backend Developer I have always paid a lot of attention at the resulting product.
+I am commited to build a great product in 2020, let's see how things go!

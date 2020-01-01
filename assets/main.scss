@@ -28,12 +28,18 @@ body {
     flex-direction: column;
     &__year {
       display: flex;
-      padding-bottom: var(--padding);
-      margin-bottom: var(--padding);
+      //   padding-bottom: var(--padding);
+      //   margin-bottom: var(--padding);
       &__title {
         font-weight: bold;
         padding: var(--padding);
-        border-right: 1px solid black;
+        border-right: 2px solid black;
+      }
+      &__ul {
+        padding: var(--padding) 0px;
+        list-style-image: url("/assets/dot.png");
+        position: relative;
+        right: 19px;
       }
     }
   }
@@ -54,6 +60,11 @@ body {
       text-align: justify;
     }
   }
+}
+
+#hello-friend {
+  padding: var(--padding) 0 0 0;
+  margin: 0px;
 }
 
 .social-media-list {
@@ -80,12 +91,13 @@ body {
   .home {
     &__card {
       flex-direction: column;
-
+      padding: var(--padding) 0px 0px 0px;
+      align-items: center;
       &__img {
-        width: 100%;
+        width: 70%;
         border-radius: 50%;
-        padding: 0px;
-        // padding: var(--padding);
+        margin: 0px;
+        padding-bottom: var(--padding);
       }
     }
   }
