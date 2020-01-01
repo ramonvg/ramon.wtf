@@ -8,13 +8,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.site-header > .wrapper {
+  display: flex;
+  justify-content: center;
+}
 .home {
   display: flex;
   width: 100%;
 }
 
 .home-content {
-//   width: 80%;
+  //   width: 80%;
 }
 .home-img {
   height: 100%;
@@ -40,6 +44,9 @@ body {
 }
 
 @include media-query($on-palm) {
+  .page-content {
+    padding-top: 0px;
+  }
   .home {
     display: flex;
     width: 100%;
