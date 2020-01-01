@@ -3,3 +3,64 @@
 ---
 
 @import "minima";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.home {
+  display: flex;
+  width: 100%;
+}
+
+.home-content {
+//   width: 80%;
+}
+.home-img {
+  height: 100%;
+  width: 20%;
+  border-radius: 50%;
+  padding: 16px;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.social-media-list > div {
+  padding: 5px;
+}
+
+.social-media-list > div > a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@include media-query($on-palm) {
+  .home {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .home-img {
+    height: 100%;
+    width: 90%;
+    border-radius: 50%;
+    padding: 16px;
+  }
+
+  .social-media-list > div > a {
+    align-items: center;
+    flex-direction: column;
+  }
+  .site-footer {
+    padding: 5px 0px;
+  }
+  .social-media-list > div > a > span {
+    display: none;
+  }
+}
