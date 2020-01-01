@@ -24,6 +24,18 @@ body {
 
   &__timeline {
     padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    &__year {
+      display: flex;
+      padding-bottom: var(--padding);
+      margin-bottom: var(--padding);
+      &__title {
+        font-weight: bold;
+        padding: var(--padding);
+        border-right: 1px solid black;
+      }
+    }
   }
 
   &__card {
