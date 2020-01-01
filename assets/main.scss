@@ -25,24 +25,23 @@ body {
   &__timeline {
     padding: var(--padding);
   }
-}
 
-.home-card {
-  display: flex;
-  width: 100%;
-  padding: var(--padding);
-}
+  &__card {
+    display: flex;
+    padding: var(--padding);
 
-.home-content {
-  padding: var(--padding);
-  text-align: justify;
-}
+    &__img {
+      height: 100%;
+      width: 20%;
+      border-radius: 50%;
+      padding: var(--padding);
+    }
 
-.home-img {
-  height: 100%;
-  width: 20%;
-  border-radius: 50%;
-  padding: var(--padding);
+    &__content {
+      padding: var(--padding);
+      text-align: justify;
+    }
+  }
 }
 
 .social-media-list {
@@ -66,19 +65,20 @@ body {
 }
 
 @include media-query($on-palm) {
+  .home {
+    &__card {
+      flex-direction: column;
+
+      &__img {
+        width: 100%;
+        border-radius: 50%;
+        padding: 0px;
+        // padding: var(--padding);
+      }
+    }
+  }
   .page-content {
     padding-top: 0px;
-  }
-
-  .home-card {
-    flex-direction: column;
-  }
-
-  .home-img {
-    height: 100%;
-    width: 90%;
-    border-radius: 50%;
-    padding: var(--padding);
   }
 
   .social-media-list > div > a {
