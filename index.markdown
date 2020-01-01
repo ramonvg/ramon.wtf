@@ -5,7 +5,7 @@
 layout: home
 ---
 
-Hello friend,
+## Hello friend,
 
 I'm Ramon Villalonga from Mallorca. I have been a Backend Developer for more than three years.
 Even as a Backend Developer I have always paid a lot of attention at the resulting product.
