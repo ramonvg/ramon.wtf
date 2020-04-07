@@ -34,6 +34,7 @@ body {
         font-weight: bold;
         padding: var(--padding);
         border-right: 2px solid black;
+        min-width: 100px;
       }
       &__ul {
         padding: var(--padding) 0px;
