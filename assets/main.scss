@@ -114,3 +114,50 @@ body {
     padding: 5px 0px;
   }
 }
+
+.project {
+  display: grid;
+  @media screen and (min-width: $on-laptop) {
+    grid-template-areas:
+      "t ft"
+      "d logo";
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 36px 1fr;
+    grid-gap: 1em;
+  }
+
+  @media screen and (max-width: $on-laptop) {
+    grid-template-areas:
+      "t"
+      "ft"
+      "logo"
+      "d";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: var(--padding);
+  }
+  margin-bottom: 32px;
+  &__logo {
+    grid-area: logo;
+    max-width: 200px;
+    max-height: 200px;
+    justify-self: center;
+    align-self: center;
+  }
+  &__from_to {
+    grid-area: ft;
+    color: grey;
+    align-self: end;
+    justify-self: end;
+  }
+  &__description {
+    grid-area: d;
+    text-align: justify;
+  }
+  &__title {
+    grid-area: t;
+    color: black;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+  }
+}
